@@ -1,0 +1,452 @@
+/* common style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left-side-area,
+.right-side-area {
+  width: 50%;
+}
+
+.left-side-area > div,
+.right-side-area > div {
+  display: none;
+  height: 100vh;
+}
+
+.right-side-area > div {
+  padding: 2rem;
+}
+
+
+.left-side-area > div.active,
+.right-side-area > div.active {
+  display: block;
+}
+
+.left-bg-img,
+.right-bg-img {
+  background: no-repeat center/cover padding-box;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+h4 {
+  font-size: .9rem;
+}
+
+/* main */
+main {
+  display: flex;
+  width: 100%;
+}
+
+/* left-side-area----------------------------- */
+/* nav */
+nav {
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.logo-icon {
+  margin: 0 0 0 1rem;
+}
+
+.menu-category {
+  display:none;
+  font-size: 2rem;
+  background-color: #000;
+  position: relative;
+  margin: 0;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.menu-category ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  margin: 0;
+}
+
+.menu-category i,
+.menu-category a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* home */
+.left-home {
+  background-image: url("../img/top.jpg");
+}
+
+/* menu */
+.left-menu {
+  background-image: url("../img/menu.jpeg");
+}
+
+/* exterior */
+.left-exterior {
+  background-image: url("../img/exterior.jpeg");
+}
+
+/* event */
+.left-event {
+  background-image: url("../img/event.jpeg");
+}
+
+/* access */
+.left-access {
+  background-image: url("../img/kobe.jpg");
+}
+
+/* reservation */
+.left-reservation {
+  background-image: url("../img/reservation.jpg");
+}
+
+/* right-side-area----------------------------- */
+/* home */
+.right-home {
+  background-image: url("../img/leaf01.png");
+}
+
+.right-home > div {
+  font-size: 1rem;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  padding: 0 2.5rem;
+}
+
+.right-home p {
+  margin: 0;
+}
+
+.right-home p:nth-child(2) {
+  margin: 1.5rem 0 0 0;
+}
+
+/* menu */
+.right-menu {
+  background-image: url("../img/leaf02.png");
+  overflow: scroll;
+}
+
+.right-menu h4 {
+  margin: 0;
+}
+
+.right-menu h5 {
+  margin: 1rem 0 .2rem;
+}
+
+.notes {
+  margin: 3rem 0 0 0;
+}
+
+.notes p {
+  font-size: .8rem;
+  margin: 0;
+}
+
+/* exterior */
+.right-exterior {
+  background-image: url("../img/leaf03.png");
+  width: 50vw;
+  overflow: scroll;
+}
+
+.concept-img {
+  width: 640px;
+  text-align: center;
+}
+
+.concept-img li {
+  margin: 1.5rem 0;
+}
+
+/* event */
+.right-event {
+  background-image: url("../img/leaf04.png");
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.event-detail {
+  margin: 2rem 0 0 0;
+}
+
+.right-event h3 {
+  text-align: center;
+}
+
+.right-event h3::before,
+.right-event h3::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #000;
+  vertical-align: middle;
+}
+
+.right-event h3::before{
+  margin: 0 4px 0 0;
+}
+
+.right-event h3::after {
+  margin: 0 0 0 4px;
+}
+
+.event-detail > div {
+  display: flex;
+}
+
+.event-img {
+  width: 20%;
+}
+
+.comment {
+  margin: 0 0 0 1rem;
+  width: 75%;
+}
+
+/* access */
+.right-access p {
+  margin: 0;
+}
+
+.right-access p:nth-child(3) {
+  border-bottom: solid thin #8E8E8E;
+  padding:0 0 2rem;
+}
+
+iframe {
+  margin: 2rem 0 0 0;
+}
+
+/* reservation */
+.right-reservation {
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+}
+
+.input-area tr {
+  width: 100%;
+}
+
+.input-area th {
+  width: 30%;
+}
+
+.input-area td {
+  width: 60%;
+}
+
+.input-col:valid {
+  background-color: #D5E0F1;
+}
+
+label {
+  font-weight: normal;
+  margin: 0;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  height: 15vh;
+}
+
+.btn-confirm {
+  padding: .5rem;
+  margin: 0 .5rem 0 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #F3D1E5;
+}
+
+.btn-confirm:hover {
+  background-color: #E3E3E3;
+}
+
+.btn-reset {
+  padding: .5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.btn-reset:hover {
+  text-decoration: underline;
+}
+
+/* Responsive---------------------------------------------------　*/
+@media screen and (max-width:480px){
+  /* common */
+  main {
+    display: block;
+    padding: 4rem 0 0;
+  }
+
+  .left-side-area,
+  .right-side-area {
+    width: 100%;
+  }
+
+  .left-side-area > div {
+    height: 200px;
+  }
+
+  .right-side-area > div {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .right-bg-img {
+    background-attachment: fixed;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+
+  /* nav */
+  .logo {
+    font-size: 1rem;
+    top: -24%;
+    left: 5%;
+  }
+
+  .menu-category {
+    height: 100vh;
+    top: -4rem;
+    z-index: 10;
+  }
+
+  .close-btn {
+    top: 5%;
+    left: 7%;
+  }
+
+  /* home */
+  .right-home > div {
+    position: static;
+    transform: none;
+    padding: 1rem;
+  }
+
+  /* exterior */
+  .right-exterior {
+    width: 100%;
+  }
+
+  .concept-img {
+    width: 100%;
+  }
+
+  /* event */
+.event-detail > div {
+  display: block;
+}
+
+  .event-wedding,
+  .event-birthday,
+  .event-other {
+    display: block;
+  }
+
+  .event-img,
+  .comment {
+    width: 100%;
+  }
+
+  .comment {
+    margin: 0;
+  }
+
+  .comment > h4,
+  .comment > p {
+    margin: 1rem 0 0 0;
+  }
+
+  /* access */
+  .right-access p:nth-child(3) {
+    padding: 0 0 1.5rem;
+  }
+
+  iframe {
+    margin: 1.5rem 0 0 0;
+    width: 100%;
+  }
+
+  /* reservation */
+  form {
+    width: 100%;
+  }
+
+  table {
+    border-spacing: .8rem;
+  }
+
+  .input-area th {
+    width: 20%;
+  }
+
+  .input-area td {
+    width: 70%;
+  }
+
+  label {
+    font-size: .9rem;
+  }
+
+  input {
+    border: none;
+    background-color: #E3E3E3;
+  }
+
+  textarea {
+    background-color: #E3E3E3;
+  }
+
+  .btn-confirm {
+    margin: 0;
+  }
+}
